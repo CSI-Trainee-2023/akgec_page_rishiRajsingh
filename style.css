@@ -5,20 +5,25 @@
     text-decoration: none;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* ----  head Section ----- */
 
 .head{
     display: flex ;
     justify-content: space-around;
     align-items: center ;
-    height: 220px ;
-    width : 100vw ;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    height: 180px ;
+    /* background-color: #8ECDDD; */
+    background-image: linear-gradient(to right top, #747e8d, #638997, #569391, #659a7c, #8a9c62);
+    /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
 }
 .logo{
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 300px;
 }
 .logo img{
     transition: 1s;
@@ -27,13 +32,13 @@
     transform: scale(1.2);
 }
 .head  img {
-    width : 150px ;
-    height: 150px ;
+    width : 130px ;
+    height: 130px ;
 }
 
 .titleAddress{
     color : #F4E869;
-    font-size: 35px;
+    font-size: 34px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     text-shadow: 9px 9px 10px grey;
@@ -57,7 +62,7 @@
         height: 250px;
     }
     .logo{
-        width: 300px;
+        width: 280px;
     }
 
     .head img{
@@ -105,33 +110,26 @@
 .nav{
     display: flex;
     align-items: center ;
-    justify-content: flex-end;
-    height : 90px;
-    width: 100vw ;
-    gap: 20px;
+    justify-content: flex-start;
+    height : 60px;
+    gap: 15px;
     background-image: linear-gradient(to right top, #131212, #171516, #1b181a, #1e1c1e, #201f22, #252529, #2a2c30, #2f3336, #393e41, #444a4c, #505657, #5c6262);
     position: sticky;
     top : 0px;
     z-index: 3;
-    overflow: unset;
 }
 .nav > div {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90px;
-    width: 150px ;    
+    height: 60px;
+    width: 130px ;    
     transition: 0.1s;
-}
-
-.nav img{
-    width : 100px ;
-    height: 70px ;
 }
 
 
 .nav a {
-    font-size: 20px ;
+    font-size: 15px ;
     font-weight: 700;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
@@ -152,23 +150,22 @@
         display: flex;
         align-items : center ;
         justify-content: center;
-        height: 50px;
+        height: 30px;
         width: 100vw;
     }
     .nav > div {
-        height: 50px;
+        height: 20px;
         width : 100vw;
     }
     .nav a{
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 
 
 /* ---- naacBanner ---- */
 
-.glimpses{
-    
+.glimpses{    
     position: relative;;
     top: 5vh;
     height: 80vh;
@@ -183,7 +180,6 @@
     border-radius: 5px;
     background-color: #EE9322;
     box-shadow: 4px 4px grey;
-    max-width: 845px;
 }
 
 
@@ -246,4 +242,114 @@
     }
 }
 
+/* --- about Section ---- */
 
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 2vh ;
+    height: fit-content;
+}
+
+.about h1{
+    color: whitesmoke ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: #22668D;
+    box-shadow: 4px 4px grey; 
+}
+
+.about2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    background-color: #272829;
+    gap: 10px;
+    height: 600px  ;
+    width : 650px ;
+    box-shadow: 0px 0px 3px 3px grey;
+    color : whitesmoke;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+}
+
+.akgecImg{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px; 
+    width: 620px ;
+}
+
+.desc{
+    width: 550px;
+}
+.read{
+    width: 100px; height: 50px;
+}
+
+@media only screen and (max-width : 700px){
+    .about{
+        height: 400px ;
+    }
+    .akgecImg{
+        width: 250px;
+        height: 150px;
+    }
+    .about2{
+        width: 300px;
+        height: 325px;
+        font-size: 10px;
+        gap: 0px;
+    }
+    .read{
+        width: 80px ;
+        height: 20px;
+        font-size: 8px;
+    }
+}
+
+/* ----  placement section --- */
+
+#placement{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: -2px;
+}
+.placement{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.placementImg{
+    display: grid;
+    grid-template-columns: repeat(6,15vw);
+    grid-template-rows: 15vw 15vw ;
+    position: relative;
+    left : 8px ;    
+}
+
+.placementImg > img{
+    border : 2px solid black ;  
+    padding : 3px ; 
+    box-shadow: 0px 0px 2px 2px grey;
+}
+
+/* ----  footer section---- */
+
+footer{
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center;
+    height: 200px;
+    column-gap: 30px;
+    background-color: rgb(39, 39, 56);
+    border-top:4px solid  orange;
+    color: whitesmoke;
+}
