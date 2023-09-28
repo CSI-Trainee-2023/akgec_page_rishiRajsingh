@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* ----  head Section ----- */
@@ -19,6 +19,12 @@
     display: flex;
     justify-content: space-between;
     width: 350px;
+}
+.logo img{
+    transition: 1s;
+}
+.logo img:hover{
+    transform: scale(1.2);
 }
 .head  img {
     width : 150px ;
@@ -48,7 +54,19 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 300px;
+        height: 250px;
+    }
+    .logo{
+        width: 300px;
+    }
+
+    .head img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .titleAddress{
+        font-size: 30px;
     }
 
     .titleAddress{
@@ -61,13 +79,171 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 400px;
+        height: 300px;
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .head img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .titleAddress{
+        font-size: 28px;
+    }
+    .address{
+        font-size: 15px;
     }
 
 }
 
 /* --- navigation bar -----  */
 
+.nav{
+    display: flex;
+    align-items: center ;
+    justify-content: flex-end;
+    height : 90px;
+    width: 100vw ;
+    gap: 20px;
+    background-image: linear-gradient(to right top, #131212, #171516, #1b181a, #1e1c1e, #201f22, #252529, #2a2c30, #2f3336, #393e41, #444a4c, #505657, #5c6262);
+    position: sticky;
+    top : 0px;
+    z-index: 3;
+    overflow: unset;
+}
+.nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 150px ;    
+    transition: 0.1s;
+}
 
+.nav img{
+    width : 100px ;
+    height: 70px ;
+}
+
+
+.nav a {
+    font-size: 20px ;
+    font-weight: 700;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.nav > div:hover{
+    background-color: #6499E9;
+    border-bottom: 4px solid orange;
+    border-radius: 4px;
+}
+
+
+/* ---- responsive nav bar --- */
+
+@media only screen and (max-width: 620px) {
+    .nav{
+        display: flex;
+        align-items : center ;
+        justify-content: center;
+        height: 50px;
+        width: 100vw;
+    }
+    .nav > div {
+        height: 50px;
+        width : 100vw;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+}
+
+
+/* ---- naacBanner ---- */
+
+.glimpses{
+    
+    position: relative;;
+    top: 5vh;
+    height: 80vh;
+}
+.glimpses h1{
+    color: whitesmoke ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: #EE9322;
+    box-shadow: 4px 4px grey;
+    max-width: 845px;
+}
+
+
+.naac{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative ;
+    top : 2vh ; 
+    gap: 50px;
+    width: 100vw;
+    
+}
+
+.pmVisit{
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px; 
+    transition:  1s;
+    min-width: 620px ;
+
+}
+.naacCert{
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px; 
+    transition:  1s;
+    min-width: 620px;
+}
+.pmVisit:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 10px grey;
+}
+.naacCert:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 10px grey;
+}
+
+ /* ---- responsive ---> naac banner ---- */
+
+@media only screen and (max-width: 700px){
+
+    .glimpses{
+        max-height: 540px;
+    }
+    .naacCert{
+        min-width: 400px;
+        max-height: 200px;
+    }
+    .pmVisit{
+        min-width: 400px;
+        max-height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) and (min-width :700px ){
+    .glimpses {
+        min-height : 900px;
+    }
+}
 
 
