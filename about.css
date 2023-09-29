@@ -1,0 +1,38 @@
+.mainContainer{
+    display: flex;
+    flex-direction : column;
+    align-items: center;
+    gap: 2vh;
+}
+
+
+/* -----  vision and mission ---- */
+
+.logoAbout2{
+    display: flex;
+    justify-content: center;
+}
+.logoAbout{
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 10px;
+}
+.descAbout{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width : 920px){
+    .logoAbout img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width : 730px){
+    .logoAbout{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr ;
+    }
+}
