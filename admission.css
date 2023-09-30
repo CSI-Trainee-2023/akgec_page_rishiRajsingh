@@ -1,0 +1,27 @@
+.featuredCourses {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap : 20px ;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;    
+    padding : 2px ;
+    gap : 3px ;     
+    height: 350px;
+    border-radius : 4px ;
+    border: 2px solid black  ;
+    box-shadow: 0px 0px 3px 3px grey ;
+}
+
+.course img {
+    height: 80%;
+    width: 100%;
+    border-radius: 4px ;
+}
+
+table, tr ,td {
+    width : 40vw ;
+    border : 1px solid black 
+}
