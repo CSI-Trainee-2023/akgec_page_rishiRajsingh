@@ -144,7 +144,6 @@ body{
     border-radius: 4px;
 }
 
-
 /* ---- responsive nav bar --- */
 
 @media only screen and (max-width: 620px) {
@@ -161,6 +160,9 @@ body{
     }
     .nav a{
         font-size: 10px;
+    }
+    .dropBtn{
+        height: 20px;
     }
 }
 
@@ -248,19 +250,22 @@ body{
 
 .about{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap : 2vh ;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
     height: fit-content;
 }
 
-.about h1{
+
+.about > .aboutTitle{
+    background-image: url(assets/events.jpg);
+    background-repeat: no-repeat;
     color: whitesmoke ;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     padding: 10px;
-    width: fit-content;
-    height: fit-content;
+    width: 280px;
+    height: 500px;
     border-radius: 5px;
     background-color: #22668D;
     box-shadow: 4px 4px grey; 
@@ -271,26 +276,27 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center ;
-    background-color: #272829;
+    background-image: linear-gradient(to right top, #d9df21, #cde23b, #c2e450, #b8e562, #b0e672, #a9e878, #a2ea7e, #9bec84, #90f083, #83f383, #73f784, #5ffb86);
     gap: 10px;
-    height: 600px  ;
+    height: 500px  ;
     width : 650px ;
     box-shadow: 0px 0px 3px 3px grey;
+    border-radius: 10px ;
     color : whitesmoke;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     transition: 1s;
 }
 
 .akgecImg{
     width: 200px;
-    height: 300px;
-    border-radius: 20px; 
+    height: 250px;
+    border-radius: 50%; 
     width: 620px ;
 }
 
 .desc{
-    width: 550px;
+    width: 500px;
 }
 .read{
     width: 100px; height: 50px;
@@ -298,15 +304,17 @@ body{
 
 @media only screen and (max-width : 700px){
     .about{
-        height: 400px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .akgecImg{
-        width: 250px;
-        height: 150px;
+        width: 200px;
+        height: 130px;
     }
     .about2{
-        width: 300px;
-        height: 325px;
+        width: 250px;
+        height: 250px;
         font-size: 10px;
         gap: 0px;
     }
@@ -343,15 +351,51 @@ body{
     box-shadow: 0px 0px 2px 2px grey;
 }
 
+@media only screen and (max-width : 1090px) {
+    .placementImg > img{
+        padding : 2px ;
+        width : 102px;
+        height: 77px;
+    }
+}
+@media only screen and (max-width : 740px){
+    .placementImg{
+        display: grid;
+        grid-template-columns: repeat(3,15vw) ;
+        grid-template-rows: repeat(4,15vw);
+        position: relative;
+        left: 0px;
+    }
+    .placementImg{
+        padding : 0px ;        
+    }
+}
+
 /* ----  footer section---- */
 
 footer{
     display: flex ;
     justify-content: space-around ;
     align-items: center;
-    height: 200px;
-    column-gap: 30px;
+    gap: 20px;
     background-color: rgb(39, 39, 56);
     border-top:4px solid  orange;
     color: whitesmoke;
+}
+.akAddress,.footerDesc{
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 700px ){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .akAddress{
+        display: flex;
+        justify-content: flex-start;
+    }
 }
