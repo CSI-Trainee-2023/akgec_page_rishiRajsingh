@@ -1,0 +1,206 @@
+
+
+/* --- glimpse Section ---- */
+
+.glimpseSec{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain ;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 20px;
+}
+.glimpseSec::-webkit-scrollbar{
+    display: none;
+}
+
+
+.glimpseSec img {
+    width: 100%;
+    height: 70vh;
+}
+
+@media screen and (max-width : 650px){
+    .glimpseSec img {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width : 326px){
+    .glimpseSec img {
+        height: 20vh;
+    }
+}
+
+/* --- About Akgec Section ---- */
+
+.aboutSmall{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.aboutHeading{
+    display: flex;
+    justify-content: center;
+    grid-column: span 2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aboutContentImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    gap: 20px;
+}
+.aboutContent div{
+    padding: 10px;
+}
+
+.readMoreBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5%;
+}
+
+.readMore{
+    background-color: #2E97A7;
+    padding: 10px;
+}
+.readMore a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+@media screen and (max-width : 769px) {
+    .aboutSmall {
+        display: flex;
+        flex-direction: column ;
+    }
+    .aboutContent{
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 570px){
+    .aboutContentImg > img {
+        width: 400px;
+    }
+    .aboutContent{
+        font-size: 15px;
+    }
+    .readMore{
+        padding: 5px;
+    }
+}
+@media screen and (max-width : 450px){
+    .aboutContentImg > img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+hr{
+    height: 7px;
+    background-color: gold;
+    color: gold;
+    border: none;
+}
+
+
+/* --- our featured courses ---- */
+
+.featuredCourse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.cardRow{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width:  400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 3px grey;
+}
+.card img {
+    width: 400px ;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: goldenrod;
+}
+
+@media  screen and (max-width : 1324px) {
+    .cardRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        gap: 30px;
+    }
+    .card {
+        width: 500px;
+    }
+    .card img{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .card{
+        width: 350px;
+        height: 400px;
+    }    
+    .card img {
+        width: 350px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .card{
+        width : 280px;
+        height: 300px;
+    }  
+    .card img {
+        width: 280px;
+        height: 170px;
+    }  
+}

@@ -4,39 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/about.css">
 </head>
 <body>
 
 
-    <!-- Head Section -->
-    <div class="head">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png"></a>
-            <img src="assets/azadi75.jpg">
+    <!-- HEADER SECTION -->
+
+    <header>
+        <div class="akgecWrapper">
+            <div><img src="/assets/akgec_logo.png"></div>
+            <div><img src="/assets/azadi75.jpg"></div>
+            <div><img src="/assets/Silver-Jubilee-Logo.jpeg"></div>
+            <div><p><b><span class="akg_title">Ajay Kumar Garg Engineering College</span></b><br>
+            <span class="addressTitle">(Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)</span></p></div>
         </div>
-        <div class="titleAddress">
-            <p>Ajay Kumar Garg Engineering College</p><br>
-            <p class="address">(Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)</p>
-        </div>
-    </div>
+    </header>
 
-    <!-- Navigation Bar -->
-    <div class="nav">         
-        <div><a href="index.html">Home</a></div>
-        <div><a href="about.html">About</a></div>
-        <div><a href="Department.html">Department</a></div>
-        <div><a href="life.html">Life@</a></div>
-        <div><a href="admission.html">Admission</a></div>
-    </div>
+    <!-- NAVIGATION SECTION  -->
 
-    <br><br>
+    <nav>
+        <ul class="navBar">
+            <li class="hamBtn" onclick="menuFunc()"><img src="/assets/hamBtn.svg"></li>
+            <li class="homeBtn"><a href="index.html"><img src="/assets/home.svg"></a></li>
+            <li class="large"><a href="index.html">Home</a></li>
+            <li class="large"><a href="about.html">About</a></li>
+            <li class="large"><a href="department.html">Department</a></li>
+            <li class="large"><a href="admission.html">Admission</a></li>
+            <li class="large"><a href="life.html">Life@</a></li>
+        </ul>
+    </nav>    
 
-<!-- about content -->
+<!-- 
 
-<div class="mainContainer">
-    <!-- vision and misson -->
 
     <div class="logoAbout">
         <div class="logoAbout2"><img src="assets/logo2.png"></div>
@@ -59,7 +60,7 @@
 </div>
     <br><br>
 
-    <!-- director general  -->
+ 
 
     <div class="dg">
         <div class="dgImg"><img src="assets/dg.jpg"></div>
@@ -72,41 +73,46 @@
     </div>
     <br><br>
 
-    <p style="text-align: justify; padding: 2vw; font-size: 20px; font-family: Arial, Helvetica, sans-serif; word-spacing: 10; letter-spacing: 10;">
-        He has held various key appointments including Chief Engineering Officer of an Operational Base, Director (Engg) at Air HQ and Project Director at Centre for Airborne Systems. His vast managerial, administrative, research and academic experience includes teaching assignments at Air Force Technical College and nine years of pioneering R&D work on the prestigious AWACS project in DRDO. He has also been a member of the Aeronautical Research & Development Board (ARDB) panel for approval and review of sponsored research projects at various centres of Excellence established at IITs and CSIR Laboratories.
+    <p style="text-align: justify; padding: 10%; font-size: 20px; font-family: Arial, Helvetica, sans-serif; word-spacing: 10; letter-spacing: 10;">
+        He has held various key appointments including Chief Engineering Officer of an Operational Base, Director (Engg) at Air HQ and Project Director at Centre for Airborne Systems. His vast managerial, administrative, research and academic experience includes teaching assignments at Air Force Technical College and nine years of pioneering R&D work on the prestigious AWACS project in DRDO. He has also been a member of the Aeronautical Research & Development Board (ARDB) panel for approval and review of sponsored research projects at various centres of Excellence established at IITs and CSIR Laboratories. <br><br>
 
 He is the recipient of the coveted Royal Aeronautical Society (UK) award for academic excellence at CIT and a citation with cash award by DRDO for his contribution to the design and development of Airborne Early Warning aircraft, culminating in its maiden flight.
 
-After taking voluntary retirement in 2004, Dr. Agarwal decided to contribute in the field of technical education and has been the Director of Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad since then. He has been persistently working towards setting new benchmarks in academic excellence as well as industry–academia interface to make the students globally competitive and employable. During his tenure, the college has not only been consistently maintaining exceptional results and placements but has also made significant progress in research and industry relevant consultancy projects. A number of initiatives and collaborative ventures with eminent multi-national companies have lead to establishment of many multi-disciplinary, high technology industry relevant facilities. These include India’s first Kuka Industrial Robotics Training Centre, NI-LabVIEW Academy, Bosch Rexroth Centre of Competence in Automation Technologies, Janatics Industrial Pneumatic Knowledge Centre and Mitsubishi Electric India. The college has also achieved the unique distinction of receiving the Academic Excellence Award for Best Engineering College in UPTU for two successive years under his able guidance.
 
-He has also contributed in bringing about a culture of corporate social responsibility in academic institutions. The social activities initiated by him include running a free primary school in the college, adopting a municipal corporation school in a nearby village, providing tuition fee subsidy to children of class IV employees, donating computers to spread computer literacy and generously contributing for relief work after natural calamities. Involvement in these activities makes the students conscious of their civic and social responsibilities. He places special emphasis on all round development with focus on inculcating self discipline, good moral values, ethics, work culture and a positive attitude to make the students not just competent professionals but also good citizens and responsible members of the society.
-
-His wide ranging experience, vision and dynamism have infused inspiration and provided a road map for academic institutions to achieve the zenith of excellence in all fields of activities.
     </p>
 
-    <br><br>
-    <!-- footer section  -->
+    <br><br> --> 
+
+    <!-- Footer Section  -->
 
     <footer>
-        <div class="akAddress">
-            <pre>
-                27th Km Milestone,
-                Delhi-Meerut Expressway,
-                P.O. Adhyatmik Nagar,
-                Ghaziabad - 201009
-
-                8744052891-93
-                7290034978
-                Admissions Enquiry: 1800-200-0777
-                info@akgec.ac.in
-            </pre>
+        <div class="footerAddress">
+            <div><img src="/assets/icons8-location-64.png">   27th Km Milestone,</div>
+            <div>Delhi Meerut Expressway, </div>
+            <div>P.O. Adhyatmik Nagar, </div>
+            <div>Ghaziabad, 201009 </div>
+            <div><img src="/assets/icons8-call-24.png">   8744052891-93 </div>
+            <div>7290034978</div>
+            <div><span style="color: yellow;">Admission Enquiry : 1800-200-0777</span></div>
+            <div></div><img src="/assets/icons8-mail-50.png"><a href="mailto:info@akgec.ac.in" style="text-decoration: none; color: yellow;">  info@akgec.ac.in</a> </div>
         </div>
-       
-        <div class="aboutAkgec">
-            <h1>About</h1><br>
-            <p>
-                Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.
-            </p>
+        <div class="quickLink">
+            <h2>Quick Links : </h2>
+            <ul>
+                <li>AKGIM-MBA Admission</li>
+                <li>AKGIM Admission</li>
+                <li>AICTE Approval Letters</li>
+                <li>NIRF Data for Ranking 2023</li>
+                <li>Mandatory Disclosure</li>
+                <li>Open Educational Resources (OER)</li>
+                <li>Online Reporting of Ragging Cases</li>
+                <li>Grievance Committee</li>
+            </ul>
+        </div>
+        <div class="footerAbt">
+            <h2>About AKGEC</h2><br>
+                <p>
+                Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.</p>
         </div>
     </footer>
    

@@ -4,128 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/home.css">
 </head>
 <body>
 
+    <!-- HEADER SECTION -->
 
-    <!-- Head Section -->
-    <div class="head">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png"></a>
-            <img src="assets/azadi75.jpg">
+    <header>
+        <div class="akgecWrapper">
+            <div><img src="/assets/akgec_logo.png"></div>
+            <div><img src="/assets/azadi75.jpg"></div>
+            <div><img src="/assets/Silver-Jubilee-Logo.jpeg"></div>
+            <div><p><b><span class="akg_title">Ajay Kumar Garg Engineering College</span></b><br>
+            <span class="addressTitle">(Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)</span></p></div>
         </div>
-        <div class="titleAddress">
-            <p>Ajay Kumar Garg Engineering College</p><br>
-            <p class="address">(Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)</p>
-        </div>
-    </div>
+    </header>
 
-    <!-- Navigation Bar -->
-    <div class="nav">         
-        <div><a href="index.html">Home</a></div>
-        <div><a href="about.html">About</a></div>
-        <div><a href="Department.html">Department</a></div>
-        <div><a href="life.html">Life@</a></div>
-        <div><a href="admission.html">Admission</a></div>
-    </div>
-<div class="mainContainer">
-    <!-- Glimpse Section  -->
-    <div class="glimpses">
-        <div>
-            <center><h1>Glimpse . . .</h1></center>
-        </div>
-        <div class="naac">
-            
-            <img src="assets/NAAC-Banner.png" class="naacCert">
-            <img src="assets/PMMODIvisit.jpg" class="pmVisit">
-        </div>
-    </div>    
+    <!-- NAVIGATION SECTION  -->
 
-    <br><br>
-    <!-- Placement Section -->
+    <nav>
+        <ul class="navBar">
+            <li class="hamBtn" onclick="menuFunc()"><img src="/assets/hamBtn.svg"></li>
+            <li class="homeBtn"><a href="index.html"><img src="/assets/home.svg"></a></li>
+            <li class="large"><a href="index.html">Home</a></li>
+            <li class="large"><a href="about.html">About</a></li>
+            <li class="large"><a href="department.html">Department</a></li>
+            <li class="large"><a href="admission.html">Admission</a></li>
+            <li class="large"><a href="life.html">Life@</a></li>
+        </ul>
+    </nav>    
 
-    <center><h1 id="placement">Our Placement</h1></center>
-    <br><br>
-    <center><hr style="width: 70%; height: 5px; color: yellow; background-color: yellow; border: 0px;"></center>
-    <br><br>
-
-    <center><p style="font-size: large;">
-        AKGEC believes that each student is a valuable resource. The placement cell focuses
-        on each student to maximize his/her career prospects and assists him/her in achieving the same.
-    </p></center>
-    <br>
-
-    <div class="placement">
-        <div class="placementImg">
-            <img src="assets/placement/cube.jpg">
-            <img src="assets/placement/niit.jpg">
-            <img src="assets/placement/placement.jpg">
-            <img src="assets/placement/jakson.jpg">
-            <img src="assets/placement/hcl.jpg">
-            <img src="assets/placement/global.jpg">
-            <img src="assets/placement/grape.jpg">
-            <img src="assets/placement/lava.jpg">
-            <img src="assets/placement/maq.jpg">
-            <img src="assets/placement/samsung.jpg">
-            <img src="assets/placement/wipro.jpg">
-            <img src="assets/placement/tech.jpg">
+    <!-- GLIMPSE SECTION  -->
+    <div class="glimpseSec">
+        <div><img src="/assets/NAAC-Banner.png"></div>
+        <div><img src="assets/PMMODIvisit.jpg"></div>
+        <div><img src="assets/ratings-Copy.png"></div>
+        <div><img src="assets/slider-2.png"></div>
         </div>
     </div>
-</div>
-    <br><br>
-    <center><hr style="width: 70%; height: 5px; color: yellow; background-color: yellow; border: 0px;"></center>
 
-    <br><br>
-
-    <!-- About Section -->
-
-    <div class="about">
-        <div class="aboutTitle"><p>ABOUT</p></div>
-        <div class="about2">
-            <div class="akgec_img">
-                <img src="assets/akgec.jpg" class="akgecImg">
-            </div>
-            
-            <div class="desc">
+    <br><hr><br>
+   <!-- About Akgec Section -->
+   <div class="aboutSmall">
+        <div class="aboutHeading"><h1>About</h1></div>
+      
+            <div class="aboutContentImg"><img src="assets/home-about.jpg"></div>
+            <div class="aboutContent">
                 <div>
-                    <h4><span style="color: red;">About</span></h4><p>The college was established in 1998 and offers B.Tech Courses in seven disciplines of       Engineering.
-                    The college also offers M.Tech in Automationand Robotics, Electronics & Communication Engineering, Computer Science, Electrical and Electronics Engineering and Mechanical Engineering.</p>
+                    The college was established in 1998 and offers B.Tech Courses in seven disciplines of Engineering.
+                    The college also offers M.Tech in Automationand Robotics, Electronics & Communication Engineering, Computer Science, Electrical and Electronics Engineering and Mechanical Engineering.
                 </div>
-                <div class="readMore">
-                    <button class="read">
-                        <a href="about.html" style="color: black;">Read More</a>
-                    </button>
+                <div class="readMoreBtn">
+                    <button class="readMore"><a href="about.html">Read More</a></button>
+                </div>
+            </div>      
+   </div>
+   <br><hr><br>
+
+   <!-- Featured Course Section  -->
+
+   <div class="featuredCourse">
+        <div class="fcHeading">
+            <h2>Our Featured Courses</h2>
+        </div>
+        <div style="padding-bottom: 30px ;">
+            <hr style=" width: 300px; height: 4px;">
+        </div>
+        <div class="cardRow">
+            <div class="card">
+                <div><img src="assets/b.tech_.jpg"></div>
+                <div class="cardContent">
+                    <div><p style="font-size: 25px; font-weight: 800;">B.Tech</p></div><br>
+                    <div><p style="font-size: 18px; font-weight: 500; color: grey;">CSE, CSE (AI&ML), CSIT, CS, CSE (DS), EN, MECH, ECE </p></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="assets/MCA_300X150.jpg">
+                </div>
+                <div class="cardContent">
+                    <div><p style="font-size: 22px; font-weight: 800;">Masters of Computer Applications</p></div><br>
+                    <div><p style="font-size: 18px; font-weight: 500; color: grey;">MCA</p></div>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="assets/voc.jpg">
+                </div>
+                <div class="cardContent">
+                    <div><p style="font-size: 22px; font-weight: 800;">M.Tech</p></div><br>
+                    <div><p style="font-size: 18px; font-weight: 500; color: grey;">CSE, ECE, EN, MECH</p></div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <br><br>
-    <!-- footer section  -->
+   </div>
+   
+   <!-- Footer Section  -->
 
     <footer>
-        <div class="akAddress">
-            <pre>
-                27th Km Milestone,
-                Delhi-Meerut Expressway,
-                P.O. Adhyatmik Nagar,
-                Ghaziabad - 201009
-
-                8744052891-93
-                7290034978
-                Admissions Enquiry: 1800-200-0777
-                info@akgec.ac.in
-            </pre>
+        <div class="footerAddress">
+            <div><img src="/assets/icons8-location-64.png">   27th Km Milestone,</div>
+            <div>Delhi Meerut Expressway, </div>
+            <div>P.O. Adhyatmik Nagar, </div>
+            <div>Ghaziabad, 201009 </div>
+            <div><img src="/assets/icons8-call-24.png">   8744052891-93 </div>
+            <div>7290034978</div>
+            <div><span style="color: yellow;">Admission Enquiry : 1800-200-0777</span></div>
+            <div></div><img src="/assets/icons8-mail-50.png"><a href="mailto:info@akgec.ac.in" style="text-decoration: none; color: yellow;">  info@akgec.ac.in</a> </div>
         </div>
-       
-        <div class="footerDesc">
-            <h1>About</h1><br>
-            <p>
-                Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.
-            </p>
+        <div class="quickLink">
+            <h2>Quick Links : </h2>
+            <ul>
+                <li>AKGIM-MBA Admission</li>
+                <li>AKGIM Admission</li>
+                <li>AICTE Approval Letters</li>
+                <li>NIRF Data for Ranking 2023</li>
+                <li>Mandatory Disclosure</li>
+                <li>Open Educational Resources (OER)</li>
+                <li>Online Reporting of Ragging Cases</li>
+                <li>Grievance Committee</li>
+            </ul>
+        </div>
+        <div class="footerAbt">
+            <h2>About AKGEC</h2><br>
+                <p>
+                Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.</p>
         </div>
     </footer>
-   
+
 </body>
 </html>
