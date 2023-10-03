@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/management.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+
+    <header>
+        <div class="akgecWrapper">
+            <div><img src="assets/akgec_logo.png"></div>
+            <div><img src="assets/azadi75.jpg"></div>
+            <div><img src="assets/Silver-Jubilee-Logo.jpeg"></div>
+            <div><p><b><span class="akg_title">Ajay Kumar Garg Engineering College</span></b><br>
+            <span class="addressTitle">(Affiliated to Dr. APJ Abdul Kalam Technical University, Lucknow, UP, College Code - 027)</span></p></div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION SECTION  -->
+
+    <nav>
+        <ul class="navBar">
+            <li class="hamBtn" onclick="myFunction()"><img src="assets/hamBtn.svg"></li>
+            <li class="homeBtn"><a href="index.html"><img src="assets/home.svg"></a></li>
+            <li class="large"><a href="index.html">Home</a></li>
+            <li class="large"><a href="about.html">About</a></li>
+            <li class="large"><a href="department.html">Department</a></li>
+            <li class="large"><a href="admission.html">Admission</a></li>
+            <li class="large"><a href="life.html">Life@</a></li>
+        </ul>
+        <div class="dropdownContent">
+            <li class="firstLi"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="department.html">Department</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="life.html">Life@</a></li>
+        </div>
+    </nav>
+
+
+      <!-- Footer Section  -->
+
+      <footer>
+        <div class="footerAddress">
+            <div><img src="assets/icons8-location-64.png">   27th Km Milestone,</div>
+            <div>Delhi Meerut Expressway, </div>
+            <div>P.O. Adhyatmik Nagar, </div>
+            <div>Ghaziabad, 201009 </div>
+            <div><img src="assets/icons8-call-24.png">   8744052891-93 </div>
+            <div>7290034978</div>
+            <div><span style="color: yellow;">Admission Enquiry : 1800-200-0777</span></div>
+            <div></div><img src="assets/icons8-mail-50.png"><a href="mailto:info@akgec.ac.in" style="text-decoration: none; color: yellow;">  info@akgec.ac.in</a> </div>
+        </div>
+        <div class="quickLink">
+            <h2>Quick Links : </h2>
+            <ul>
+                <li>AKGIM-MBA Admission</li>
+                <li>AKGIM Admission</li>
+                <li>AICTE Approval Letters</li>
+                <li>NIRF Data for Ranking 2023</li>
+                <li>Mandatory Disclosure</li>
+                <li>Open Educational Resources (OER)</li>
+                <li>Online Reporting of Ragging Cases</li>
+                <li>Grievance Committee</li>
+            </ul>
+        </div>
+        <div class="footerAbt">
+            <h2>About AKGEC</h2><br>
+                <p>
+                Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+          document.getElementsByClassName("dropdownContent")[0].classList.toggle("reveal");
+        }       
+        function learnMore(){
+            document.getElementsByClassName("learnMoreDropDown")[0].classList.toggle("show");
+        } 
+    </script>
+</body>
+</html>
