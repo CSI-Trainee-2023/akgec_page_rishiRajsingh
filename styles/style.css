@@ -135,6 +135,34 @@ nav{
     }   
 }
 
+.dropdownContent{
+    display: none;
+}
+.reveal{
+    display: block;
+    height: 100vh;
+    z-index: 1;
+    background-color: #333;
+}
+.reveal li{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.firstLi{
+    border-top: 2px solid whitesmoke;
+}
+.reveal a{
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.reveal li:hover{
+    background-color: orange;
+}
+
 
 /* --- footer Section ---- */
 

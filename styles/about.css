@@ -1,8 +1,42 @@
-.mainContainer{
+.learnMoreBtn{
+    text-align: center ;
+    padding: 20px;
+    color: white;
+    background-color: #EE9322;
+    box-shadow: 0px 0px 3px 2px whitesmoke;
+    font-size: large;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+.learnMoreDropDown{
+    display: none;
+}
+.show{
     display: flex;
-    flex-direction : column;
-    align-items: center;
-    gap: 2vh;
+    justify-content: space-around;
+    background-color: #333;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border-top: 2px solid whitesmoke;
+    z-index: 1;
+}
+.show li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+}
+.show a{
+    color: white;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width : 470px) {
+    .show a {
+        font-size: 10px;
+    }
 }
 
 
@@ -24,8 +58,14 @@
 .descAbout{
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 25%;
+    padding: 30px 20px ;
+    font-family: 'Open sans', sans-serif;
+}
+.descAbout h2{
+    color: #333;
+}
+.descAbout  p{
+    color: gray ;
 }
 
 @media only screen and (max-width : 920px){
@@ -42,9 +82,15 @@
         grid-template-rows: 0.5fr 1fr ;
     }
 }
+@media screen and (max-width : 375px){
+    .logoAbout img {
+        width: 250px;
+        height: 250px;
+    }
+}
 
 /* director general section  */
-
+/* 
 .dg {
     display: flex;
     justify-content: center ;
@@ -99,4 +145,4 @@
     .dgDesc p{
         font-size: 9px !important;
     }
-}
+} */

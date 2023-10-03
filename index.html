@@ -26,7 +26,7 @@
 
     <nav>
         <ul class="navBar">
-            <li class="hamBtn" onclick="menuFunc()"><img src="assets/hamBtn.svg"></li>
+            <li class="hamBtn" onclick="myFunction()"><img src="assets/hamBtn.svg"></li>
             <li class="homeBtn"><a href="index.html"><img src="assets/home.svg"></a></li>
             <li class="large"><a href="index.html">Home</a></li>
             <li class="large"><a href="about.html">About</a></li>
@@ -34,6 +34,13 @@
             <li class="large"><a href="admission.html">Admission</a></li>
             <li class="large"><a href="life.html">Life@</a></li>
         </ul>
+        <div class="dropdownContent">
+            <li class="firstLi"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="department.html">Department</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="life.html">Life@</a></li>
+        </div>
     </nav>    
 
     <!-- GLIMPSE SECTION  -->
@@ -136,16 +143,8 @@
 
     <script>
         function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        window.onclick = function(e) {
-          if (!e.target.matches('.dropbtn')) {
-          var myDropdown = document.getElementById("myDropdown");
-            if (myDropdown.classList.contains('show')) {
-              myDropdown.classList.remove('show');
-            }
-          }
-        }
-        </script>
+          document.getElementsByClassName("dropdownContent")[0].classList.toggle("reveal");
+        }        
+    </script>
 </body>
 </html>

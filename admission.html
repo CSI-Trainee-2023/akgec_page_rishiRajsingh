@@ -27,7 +27,7 @@
 
     <nav>
         <ul class="navBar">
-            <li class="hamBtn" onclick="menuFunc()"><img src="assets/hamBtn.svg"></li>
+            <li class="hamBtn" onclick="myFunction()"><img src="assets/hamBtn.svg"></li>
             <li class="homeBtn"><a href="index.html"><img src="assets/home.svg"></a></li>
             <li class="large"><a href="index.html">Home</a></li>
             <li class="large"><a href="about.html">About</a></li>
@@ -35,6 +35,13 @@
             <li class="large"><a href="admission.html">Admission</a></li>
             <li class="large"><a href="life.html">Life@</a></li>
         </ul>
+        <div class="dropdownContent">
+            <li class="firstLi"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="department.html">Department</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="life.html">Life@</a></li>
+        </div>
     </nav>    
 
 
@@ -70,7 +77,11 @@
                 Ajay Kumar Garg Engineering College (AKGEC) offers four year under graduate B.Tech course in ten engineering branches, two year post graduate M.Tech course in four engineering branches and two year post graduate MCA course.</p>
         </div>
     </footer>
-    
+    <script>
+        function myFunction() {
+          document.getElementsByClassName("dropdownContent")[0].classList.toggle("reveal");
+        }        
+    </script>
    
 </body>
 </html>
